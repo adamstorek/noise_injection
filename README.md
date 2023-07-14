@@ -32,12 +32,18 @@ and test splits as used in our evaluation. The training and validation documents
 
 If you use our code and/or dataset, please cite:
 ```
-@misc{storek2023unsupervised,
-      title={Unsupervised Selective Rationalization with Noise Injection}, 
-      author={Adam Storek and Melanie Subbiah and Kathleen McKeown},
-      year={2023},
-      eprint={2305.17534},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{storek-etal-2023-unsupervised,
+    title = "Unsupervised Selective Rationalization with Noise Injection",
+    author = "Storek, Adam  and
+      Subbiah, Melanie  and
+      McKeown, Kathleen",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.707",
+    pages = "12647--12659",
+    abstract = "A major issue with using deep learning models in sensitive applications is that they provide no explanation for their output. To address this problem, unsupervised selective rationalization produces rationales alongside predictions by chaining two jointly-trained components, a rationale generator and a predictor. Although this architecture guarantees that the prediction relies solely on the rationale, it does not ensure that the rationale contains a plausible explanation for the prediction. We introduce a novel training technique that effectively limits generation of implausible rationales by injecting noise between the generator and the predictor. Furthermore, we propose a new benchmark for evaluating unsupervised selective rationalization models using movie reviews from existing datasets. We achieve sizeable improvements in rationale plausibility and task accuracy over the state-of-the-art across a variety of tasks, including our new benchmark, while maintaining or improving model faithfulness.",
 }
 ```
